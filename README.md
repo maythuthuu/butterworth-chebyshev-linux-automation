@@ -11,8 +11,9 @@ The data used in this project comes from two analog filters I designed in LTspic
 - A 6th-order Butterworth low-pass filter
 - A 6th-order Chebyshev low-pass filter
 
-![Butterworth Schematic](butterworth_schematic.png)
-![Butterworth LTspice Bode Plot](butterworth_spiceplots.png)
+![Butterworth Schematic](images/butterworth_schematic.png)
+![Butterworth LTspice Bode Plot](images/butterworth_spiceplots.png)
+
 Both filters use the same cascaded 2nd-order active topology, with different RC values to achieve the desired frequency response. The designs were originally developed for my ECE 4205 course and are used here as example inputs for the automation flow.
 
 Rather than focusing on synthesis math, this project focuses on analyzing and visualizing the frequency-domain behavior of implemented analog circuits.
@@ -43,8 +44,8 @@ The example data currently included is from a 6th-order Butterworth filter. The 
    python3 plot.py
 5. On Windows (WSL), generated images can be viewed from the project directory using the WSL filesystem, for example:
 \\wsl.localhost\<distro-name>\home\<username>\<project-directory>
-![Butterworth Magnitude Plot](magnitude.png) 
-![Butterworth Phase Plot](phase.png)
+![Butterworth Magnitude Plot](images/magnitude.png) 
+![Butterworth Phase Plot](images/phase.png)
 
 This process avoids manual editing in Excel and does not require MATLAB.
 
